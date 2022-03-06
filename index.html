@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Goblin+One&family=Patrick+Hand&family=Permanent+Marker&family=Reggae+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Goblin+One&family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Crete+Round&family=Goblin+One&family=Patrick+Hand&family=Permanent+Marker&family=Reggae+One&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Crete+Round&family=Goblin+One&family=Patrick+Hand&family=Permanent+Marker&family=Reggae+One&family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Crete+Round&family=Goblin+One&family=Patrick+Hand&family=Permanent+Marker&family=Reggae+One&family=Sanchez&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Cabin+Sketch&family=Crete+Round&family=Goblin+One&family=Patrick+Hand&family=Permanent+Marker&family=Reggae+One&family=Sanchez&family=Squada+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Cabin+Sketch&family=Cinzel+Decorative&family=Crete+Round&family=Goblin+One&family=Patrick+Hand&family=Permanent+Marker&family=Reggae+One&family=Sanchez&family=Squada+One&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d36140f520.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="laptop.png">
+    <title>Speed-tech</title>
+</head>
+
+<body>
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="container" id="contain">
+        <div class="image">
+            <img src="laptop.png" alt="Laptop">
+        </div>
+
+        <ul class="nav">
+            <li><a href="https://www.asus.com/About-ASUS/">EXPLORE</a></li>
+            <li><a href="https://wheretobuy.asus.in/">STORE</a></li>
+            <li><a href="https://www.asus.com/in/support/">SUPPORT</a></li>
+            <div class="animation start-Explore">
+
+            </div>
+        </ul>
+
+        <div class="box">
+            <input type="text" name="search" id="search" placeholder=" Search for Laptop">
+        </div>
+        <div class="box2">
+            <img src="cart.png" alt="car">
+        </div>
+        <div class="box3">
+            <img src="search.png" alt="ii">
+        </div>
+
+    </div>
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="line">
+        <div id="content">
+        </div>
+        <div class="heading">
+            <h3>Smarter Technology for All </h3>
+            <p style="color:yellow;">See how Laptops technology transforms the world
+            </p>
+        </div>
+    </div>
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <script>
+        function displaytime() {
+            let time = new Date();
+            let hrs = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let c = 0;
+            let number;
+            if (hrs > 12) {
+                hrs = hrs - 12;
+                c += 1;
+            }
+            if (c % 2 == 0) {
+                number = 'AM';
+            } else {
+                number = 'PM';
+            }
+            if (hrs == 0) {
+                hrs = 12;
+            }
+            if (hrs < 10) {
+                hrs = '0' + hrs;
+            }
+            if (min < 10) {
+                min = '0' + min;
+            }
+            if (sec < 10) {
+                sec = '0' + sec;
+            }
+
+            document.getElementById('content').innerHTML = hrs + ': ' + min + ': ' + sec + '    ' + number;
+        }
+        setInterval(displaytime, 1000);
+    </script>
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="banner">
+    </div>
+
+    <div class="status">
+        <h3>WELCOME TO THE TECHNICAL WORLD</h3>
+    </div>
+
+
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="table1">
+        <a href="#contain"> <img src="asus.0.png" alt="ASUS"></a>
+    </div>
+
+
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="lap">
+        <div class="laptop" id="laptop1">
+            <h3 style="font-family: 'Open Sans', sans-serif;text-align: center;
+            font-size: 3.8rem;">ASUS ZenBook 14</h3>
+            <a href="https://www.asus.com/in/Laptops/For-Home/ZenBook/ZenBook-14-UX435/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Laptops/For-Home/ZenBook/ZenBook-14-UX435/"><img src="https://technave.com/data/files/mall/article/202008260823572072.jpg" alt="ASUS ZenBook 14 UX434FLC"></a>
+        </div>
+        <div class="laptop" id="laptop2">
+            <h3 style="font-family: 'Reggae One', cursive;text-align: center;
+            font-size: 2.8rem; margin-top:5px">ASUS ROG Mothership </h3>
+            <a href="https://rog.asus.com/articles/gaming/the-rog-mothership-redefines-the-form-factor-for-desktop-replacement-gaming-laptops/"><strong><h4 style="margin-top: 32px;">Learn More</h4></strong></a>
+            <a href="https://rog.asus.com/articles/gaming/the-rog-mothership-redefines-the-form-factor-for-desktop-replacement-gaming-laptops/"><img src="https://technave.com/data/files/mall/article/202009020414547197.jpg" alt="ASUS ROG Mothership GZ700"></a>
+        </div>
+    </div>
+
+    <div class="lap">
+        <div class="laptop" id="laptop3">
+            <h3 style="font-family: 'Crete Round', serif;text-align: center;
+            font-size: 2.8rem;">ASUS M415</h3>
+            <a href="https://www.asus.com/in/Laptops/For-Home/Everyday-use/ASUS-M415/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Laptops/For-Home/Everyday-use/ASUS-M415/"><img src="https://technave.com/data/files/mall/article/202105030310461356.jpg" alt="ASUS M415"></a>
+        </div>
+        <div class="laptop" id="laptop4">
+            <h3 style="font-family: 'Goblin One', cursive;text-align: center;
+            font-size: 2.8rem;">ASUS ROG Strix SCAR 15</h3>
+            <a href="https://www.croma.com/asus-rog-strix-scar-15-g533qr-hf078ts-ryzen-7-windows-10-home-gaming-laptop-16gb-ram-1tb-ssd-nvidia-geforce-rtx-3070-+-8gb-graphics-ms-office-39-62cm-black-/p/233712"><strong>Learn More</strong></a>
+            <a href="https://www.croma.com/asus-rog-strix-scar-15-g533qr-hf078ts-ryzen-7-windows-10-home-gaming-laptop-16gb-ram-1tb-ssd-nvidia-geforce-rtx-3070-+-8gb-graphics-ms-office-39-62cm-black-/p/233712"><img src="https://technave.com/data/files/mall/article/202009010902422009.jpg" alt="ASUS ROG Strix SCAR 15"></a>
+        </div>
+    </div>
+
+    <div class="lap">
+        <div class="laptop" id="laptop5">
+            <h3 style="font-family: 'Reggae One', cursive;text-align: center;
+            font-size: 2.8rem;">ASUS ExpertBook P1440FA</h3>
+            <a href="https://www.asus.com/in/Commercial-Laptops/ASUS-ExpertBook-P1440FA/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Commercial-Laptops/ASUS-ExpertBook-P1440FA/"><img src="https://technave.com/data/files/mall/article/202008280704222159.jpg" alt="ASUS ExpertBook P1440FA"></a>
+        </div>
+        <div class="laptop" id="laptop6">
+            <h3 style="font-family: 'Crete Round', serif;text-align: center;
+            font-size: 2.8rem;">ASUS ZenBook Flip 14 UM462DA</h3>
+            <a href="https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-flip-14-ux462/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/laptops/for-home/zenbook/asus-zenbook-flip-14-ux462/"><img src="https://technave.com/data/files/mall/article/202009020635376723.jpg" alt="ASUS ZenBook Flip 14 UM462DA"></a>
+        </div>
+    </div>
+
+    <div class="lap">
+        <div class="laptop" id="laptop7">
+            <h3 style="font-family: 'Goblin One', cursive;text-align: center;
+            font-size: 2.8rem;">ASUS TUF Gaming A17 </h3>
+            <a href="https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-A17/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Laptops/For-Gaming/TUF-Gaming/ASUS-TUF-Gaming-A17/"><img src="https://technave.com/data/files/mall/article/202009010341432541.jpg" alt="ASUS TUF Gaming A17 "></a>
+        </div>
+        <div class="laptop" id="laptop8">
+            <h3 style="font-family: 'Cinzel Decorative', cursive;text-align: center;
+            font-size: 2.8rem;">asus zenbook flip s</h3>
+            <a href="https://www.asus.com/in/Laptops/For-Home/ZenBook/ASUS-ZenBook-Flip-S-UX370/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Laptops/For-Home/ZenBook/ASUS-ZenBook-Flip-S-UX370/"><img src="https://technave.com/data/files/mall/article/202103120448032406.jpg" alt="asus zenbook flip s"></a>
+        </div>
+    </div>
+
+    <div class="lap">
+        <div class="laptop" id="laptop9">
+            <h3 style="font-family: 'Black Ops One', cursive;text-align: center;
+            font-size: 2.8rem;">ASUS ZenBook Pro Duo UX581GV</h3>
+            <a href="https://www.asus.com/in/Commercial-Laptops/ZenBook-Pro-Duo-UX581GV/"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Commercial-Laptops/ZenBook-Pro-Duo-UX581GV/" style="margin-top: 13px;"><img src="https://technave.com/data/files/mall/article/202008270444516095.jpg" alt="ASUS ZenBook Pro Duo UX581GV"></a>
+        </div>
+        <div class="laptop" id="laptop10">
+            <h3 style="font-family: 'Goblin One', cursive;text-align: center;
+            font-size: 2.8rem;">ASUS Vivobok s</h3>
+            <a href="https://www.asus.com/in/Laptops/For-Home/VivoBook/filter?SubSeries=VivoBook-S"><strong>Learn More</strong></a>
+            <a href="https://www.asus.com/in/Laptops/For-Home/VivoBook/filter?SubSeries=VivoBook-S"><img src="https://technave.com/data/files/mall/article/202008270811392458.jpg" alt="asus vivobok s"></a>
+        </div>
+    </div>
+
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="other1">
+        <div class="content2">
+            Upgrade to 1 year accidental damage services @ ₹499, get headset*
+        </div>
+        <div class="content3">
+            <img src="https://i.dell.com/sites/csimages/Banner_Imagery/all/imm-1-new.png" alt="lap">
+        </div>
+        <div class="content4">
+            COMPREHENSIVELY__IN CONTROL
+        </div>
+        <div class="content5">
+            <p>*T&C apply</p>
+        </div>
+        <button class="btn">
+        <a href="https://www.amazon.in/Asus-Laptops/b?node=10726224031">Shop Now</a>
+        </button>
+    </div>
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="other2">
+        <div class="content6">
+            LESS DOWNTIME. MORE DO TIME.
+        </div>
+        <div class="content7">
+            <img src="https://www.asus.com/media/Odin/Websites/global/SubSeries/global_VivoBook_1/P_setting_xxx_0_90_end_185.png" alt="lapi">
+        </div>
+        <div class="content8">
+            <p>*T&C apply</p>
+        </div>
+        <button class="btn1">
+            <a href="https://www.flipkart.com/laptops/asus~brand/pr?sid=6bo,b5g">Shop Now</a>
+        </button>
+    </div>
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="pink">
+        <div class="content9">
+            <a href="https://www.asus.com/in/support/CallUs">Chat or Call</a>
+        </div>
+    </div>
+
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+    <div class="last2">
+        <div class="lastnav">
+            <li>
+                <h2>COMMUNITY</h2>
+            </li>
+            <li>
+                <h2>SUPPORT</h2>
+            </li>
+            <li>
+                <h2>NEWS</h2>
+            </li>
+            <li>
+                <h2>MEDIA</h2>
+            </li>
+            <li>
+                <h2>ABOUT </h2>
+            </li>
+        </div>
+        <div class="last1">
+            <div class="Community">
+                <li><a href="#">ASUS Reward Program</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Videos</a></li>
+
+            </div>
+            <div class="support">
+                <li> <a href="#">Download</a> </li>
+                <li><a href="#">Member Center</a></li>
+                <li><a href="#">Online Customer Service</a></li>
+                <li><a href="#">Warranty</a></li>
+            </div>
+            <div class="news">
+                <li>
+                    <a href="#" News></a>
+                </li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">RSS</a></li>
+            </div>
+            <div class="media">
+                <li><a href="#">Brochure</a></li>
+                <li><a href="#">Wallpaper</a></li>
+                <li><a href="#">ASUS Apps</a></li>
+            </div>
+            <div class="about">
+                <li><a href="#">ASUS Vision</a></li>
+                <li><a href="#">Certificate</a></li>
+                <li><a href="#">Brand Story</a></li>
+                <li><a href="#">Investor Information</a></li>
+                <li><a href="#">E-waste Management</a></li>
+            </div>
+
+        </div>
+        <div class="mail">
+            <h4>Get all the latest information on Events, Sales and Offers..</h4>
+            <a href="https://sksharma26.groovepages.com/sk/">Access</i></a>
+            <input class="message" type="email" placeholder="Enter your email address">
+
+        </div>
+        <div class="fa" style="display: flex;">
+            <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sachin-sharma-3212501b2/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/sharmaji2612"><i class="fa fa-github-alt fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram  fa-2x"></i></a></li>
+        </div>
+        <div class="me">
+
+            <h1> Created By: S.K SHARMA</h1>
+            <img src="https://avatars.githubusercontent.com/u/72704305?v=4" alt="Sachin sharma">
+        </div>
+    </div>
+
+    <!--*********************************************************************************************************************************************************************************************9*******-->
+
+    <div class="block">
+        <h3>Delivery timelines may vary in certain pin codes due to Covid-19 related restrictions by local Govt <a href="#">Know More</a></h3>
+        <div class="sign">
+
+            <a href="#contain"><i class="fa fa-arrow-up fa-2x"></i></a>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
